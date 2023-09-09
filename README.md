@@ -2,8 +2,10 @@
 
 install nodejs 16
 install hardhad == npm install --save-dev hardhat/
-term npx hardhad
-enter2
+trem npm install @openzeppelin/contracts --save
+term npx hardhat node
+term npx hardhat compile
+term npx hardhat run --network  localhost scripts/deploy.js
 
 trem npm install @openzeppelin/contracts --save
 
