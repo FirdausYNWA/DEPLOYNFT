@@ -1,17 +1,17 @@
-const hre = require("hardhat");
+const hre = require('hardhat');
 
-async function deploy() {
-  const firdaus = await hre.ethers.getContractFactory("firdaus");
-  const Firdaus = await firdaus.deploy();
+async function deploy(){
+    const Salamun = await hre.ethers.getContractFactory('Salamun');
+    const salamun = await Salamun.deploy();
 
-  await Firdaus.deployed();
+    await salamun.deployed();
 
-  console.log("firdaus deployed to:", Firdaus.address);
+    console.log("Salamun deployed to:", salamun.address);
 }
 
 deploy()
-  .then(() => process.exit(0))
-  .catch((error) => {
-    console.log(error);
-    procecs.exit(1);
-  });
+    .then(() =>process.exit(0))
+    .catch((error) =>{
+        console.log(error)
+        process.exit(1);
+    });
